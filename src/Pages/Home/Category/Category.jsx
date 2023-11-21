@@ -8,15 +8,12 @@ import slide2 from "../../../assets/home/slide2.jpg"
 import slide3 from "../../../assets/home/slide3.jpg"
 import slide4 from "../../../assets/home/slide4.jpg"
 import slide5 from "../../../assets/home/slide5.jpg"
+import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 const Category = () => {
     return (
-        <div className='my-10'>
-            <div className='text-center space-y-5 mb-5'>
-            <p className='text-xl text-[#D99904] '>---From 11:00am to 10:00pm---</p>
-            <hr className='h-[4px] w-[424px] mx-auto'/>
-            <h3 className='text-3xl'>ORDER ONLINE</h3>
-            </div>
-          
+        <section className='my-10'>
+           
+          <SectionTitle heading={"ORDER ONLINE"} subheading={"---From 11:00am to 10:00pm---"}></SectionTitle>
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}
@@ -49,7 +46,7 @@ const Category = () => {
                 </SwiperSlide>
 
             </Swiper>
-        </div>
+        </section>
     );
 };
 
